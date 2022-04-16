@@ -1,0 +1,14 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+<%= link_to edit_article_path do %>
+  <i class="fa fa-pencil"></i>
+<% end %>
+<%= link_to article_path(@article), method: :delete do%>
+  <i class="fa fa-trash-o"></i>
+<% end %>
+
+<h2><%= Faker::Company.catch_phrase %></h2>
+<p><%= Faker::Lorem.sentence(word_count: 50) %></p>
+<br>
+<h2><%= Faker::Company.catch_phrase %></h2>
+<p><%= Faker::Lorem.sentence(word_count: 60) %></p>

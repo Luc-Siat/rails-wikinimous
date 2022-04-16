@@ -1,0 +1,30 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.links {
+  display: inline-block;
+  width: 100%;
+}
+
+.links a {
+  text-decoration: none;
+  color: #3181B3;
+}
+.navbar > a {
+  color: grey;
+}
+
+.article-title {
+  color: #3181B3;
+  font-size: 30px;
+  text-decoration: none;
+    &:hover  {
+      text-decoration: underline;
+      color: #3181B3;
+  }
+}
+
+.form-content {
+  height: 100px;
+  background-color: bisque;
+}

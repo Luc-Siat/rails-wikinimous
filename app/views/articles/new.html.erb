@@ -1,0 +1,11 @@
+
+<h1>New article</h1>
+<%= form_for(@article) do |f| %>
+  <% f.options[:html][:class] += ' form-control'%>
+  <%=f.label :title %>
+  <%=f.text_field :title, :class => 'form-control'  %>
+  <%=f.label :content  %>
+  <%=f.text_field :content, :class => 'form-control form-content'  %>
+  <br>
+  <%= f.submit :submit => 'Create Article', :class => "btn btn-default border" %>
+<% end %>
